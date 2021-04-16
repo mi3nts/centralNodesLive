@@ -1,0 +1,145 @@
+Exception in thread "AWT-EventQueue-0" java.lang.OutOfMemoryError: GC overhead limit exceeded
+Exception in thread "AWT-EventQueue-0" java.lang.OutOfMemoryError: GC overhead limit exceeded
+Exception in thread "AWT-EventQueue-0" java.lang.OutOfMemoryError: GC overhead limit exceeded
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+--------------------------------------------------------------------------------
+       Segmentation violation detected at Sun Mar 14 17:08:56 2021 -0500
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : UTF-8
+  Deployed                 : false
+  GNU C Library            : 2.28 stable
+  Graphics Driver          : Unknown software 
+  Graphics card 1          : 0x1a03 ( 0x1a03 ) 0x2000 Version 0.0.0.0 (0-0-0)
+  Java Version             : Java 1.8.0_202-b08 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+  MATLAB Architecture      : glnxa64
+  MATLAB Entitlement ID    : 1331448
+  MATLAB Root              : /opt/ohpc/pub/unpackaged/apps/matlab/R2020a
+  MATLAB Version           : 9.8.0.1359463 (R2020a) Update 1
+  OpenGL                   : software
+  Operating System         : Linux 4.18.0-193.19.1.el8_2.x86_64 #1 SMP Mon Sep 14 14:37:00 UTC 2020 x86_64
+  Process ID               : 43022
+  Processor ID             : x86 Family 6 Model 45 Stepping 7, GenuineIntel
+  Session Key              : 4135d470-d8b1-4bd6-a756-9c56489d1dd1
+  Static TLS mitigation    : Disabled: Unnecessary
+  Window System            : No active display
+
+Fault Count: 1
+
+
+Abnormal termination:
+Segmentation violation
+
+Register State (from fault):
+  RAX = 0000000000000000  RBX = 00007fbac192a000
+  RCX = 00007fbac76dc9d0  RDX = 00007fbac7fd43e9
+  RSP = 00007fbace154520  RBP = 00007fbace154560
+  RSI = 0000000000000000  RDI = 00007fbac192a000
+
+   R8 = 00007fbac00008e2   R9 = 0000000000000003
+  R10 = 000000000000006a  R11 = 000000000000004a
+  R12 = 00007fbac192a1f8  R13 = 0000000000000000
+  R14 = 00007fb57d1327d0  R15 = 00007fb57d53b300
+
+  RIP = 00007fbac76dd555  EFL = 0000000000010246
+
+   CS = 0033   FS = 0000   GS = 0000
+
+Stack Trace (from fault):
+[  0] 0x00007fbac76dd555 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/sys/java/jre/glnxa64/jre/lib/amd64/server/libjvm.so+07103829
+[  1] 0x00007fbacfd7a28b /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/matlab_startup_plugins/jmi/../../../../bin/glnxa64/libmwjmi.so+01155723 _Z17mljGetObjectClassP8_jobject+00000059
+[  2] 0x00007fb9775bcd81 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libuij.so+00294273
+[  3] 0x00007fb9775bf69b /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libuij.so+00304795
+[  4] 0x00007fb97686cf13 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+03194643
+[  5] 0x00007fb976849115 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+03047701
+[  6] 0x00007fb97686eba2 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+03201954
+[  7] 0x00007fb976897598 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+03368344
+[  8] 0x00007fb9768978a5 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+03369125
+[  9] 0x00007fb976a92fc9 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+05447625
+[ 10] 0x00007fb976aa277f /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhg.so+05511039
+[ 11] 0x00007fbacd6608b3 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcos_impl.so+04040883
+[ 12] 0x00007fbacd660f81 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcos_impl.so+04042625
+[ 13] 0x00007fbacd663658 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcos_impl.so+04052568
+[ 14] 0x00007fbacd66b8d2 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcos_impl.so+04085970
+[ 15] 0x00007fbacd661ba8 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcos_impl.so+04045736
+[ 16] 0x00007fbacd661def /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcos_impl.so+04046319
+[ 17] 0x00007fbacd66238c /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcos_impl.so+04047756
+[ 18] 0x00007fbacd662476 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcos_impl.so+04047990
+[ 19] 0x00007fbacd707139 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcos_impl.so+04723001
+[ 20] 0x00007fb9777b42cf /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhgbuiltins.so+01909455
+[ 21] 0x00007fb9777b3b67 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhgbuiltins.so+01907559
+[ 22] 0x00007fb9777de6a2 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/builtins/matlab_graphics_hgbuiltins/../../../../bin/glnxa64/libmwhgbuiltins.so+02082466
+[ 23] 0x00007fbad7a2d96d /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_dispatcher.so+00674157
+[ 24] 0x00007fbad7a163f6 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_dispatcher.so+00578550
+[ 25] 0x00007fbad7a166d1 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_dispatcher.so+00579281 _ZN18Mfh_MATLAB_fn_impl8dispatchEiPSt10unique_ptrI11mxArray_tagN6matrix6detail17mxDestroy_deleterEEiPPS1_+00000033
+[ 26] 0x00007fbad54ec35d /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_lxe.so+10163037
+[ 27] 0x00007fbad54f0e96 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_lxe.so+10182294
+[ 28] 0x00007fbad55fd67e /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_lxe.so+11282046
+[ 29] 0x00007fbad55f0701 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_lxe.so+11228929
+[ 30] 0x00007fbad555e474 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_lxe.so+10630260
+[ 31] 0x00007fbad5584a7d /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_lxe.so+10787453
+[ 32] 0x00007fbad51e7f90 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_lxe.so+06999952
+[ 33] 0x00007fbad51d06cf /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_lxe.so+06903503
+[ 34] 0x00007fbad51d4d05 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_lxe.so+06921477
+[ 35] 0x00007fbad53fbc61 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_lxe.so+09178209
+[ 36] 0x00007fbad53a8633 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_lxe.so+08836659
+[ 37] 0x00007fbad53ac7ff /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_lxe.so+08853503
+[ 38] 0x00007fbad53af332 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_lxe.so+08864562
+[ 39] 0x00007fbad544913f /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_lxe.so+09494847
+[ 40] 0x00007fbad544960b /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_lxe.so+09496075
+[ 41] 0x00007fbad78a10d0 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwm_interpreter.so+01335504 _Z51inEvalCmdWithLocalReturnInDesiredWSAndPublishEventsRKNSt7__cxx1112basic_stringIDsSt11char_traitsIDsESaIDsEEEPibbP15inWorkSpace_tagN9MathWorks3lxe10EvalSourceE+00000064
+[ 42] 0x00007fbad7d3c95c /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwiqm.so+00751964 _ZNK3iqm18InternalEvalPlugin24inEvalCmdWithLocalReturnERKNSt7__cxx1112basic_stringIDsSt11char_traitsIDsESaIDsEEEP15inWorkSpace_tag+00000092
+[ 43] 0x00007fbad7d3dbce /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwiqm.so+00756686 _ZN3iqm18InternalEvalPlugin7executeEP15inWorkSpace_tag+00000222
+[ 44] 0x00007fbad7bd7735 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcr.so+00952117
+[ 45] 0x00007fbad7d28690 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwiqm.so+00669328
+[ 46] 0x00007fbad7d0901c /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwiqm.so+00540700
+[ 47] 0x00007fbad7d09421 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwiqm.so+00541729
+[ 48] 0x00007fbae48cf1bc /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmlutil.so+07565756 _ZNK14cmddistributor16IIPRunNowMessage7deliverERKN10foundation7msg_svc8exchange7RoutingE+00000044
+[ 49] 0x00007fbae54163cf /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwms.so+02630607 _ZN10foundation7msg_svc8exchange12MessageQueue7deliverERKN7mwboost10shared_ptrIKNS1_8EnvelopeEEE+00000207
+[ 50] 0x00007fbae54183e0 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwms.so+02638816
+[ 51] 0x00007fbae54014fb /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwms.so+02544891
+[ 52] 0x00007fbae5403e67 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwms.so+02555495
+[ 53] 0x00007fbae53fdda3 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwms.so+02530723
+[ 54] 0x00007fbae482c451 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmlutil.so+06898769
+[ 55] 0x00007fbae482c7da /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmlutil.so+06899674
+[ 56] 0x00007fbae75bdd33 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmvm.so+02678067 _ZN7mwboost6detail8function26void_function_obj_invoker0INS_3_bi6bind_tINS3_11unspecifiedENS4_IS5_NS_8functionIFvvEEENS3_5list0EEENS3_5list1INS_17reference_wrapperINS_7promiseIvEEEEEEEEvE6invokeERNS1_15function_bufferE+00000035
+[ 57] 0x00007fbae75b31a5 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmvm.so+02634149 _ZN7mwboost13unique_futureIvE3getEv+00000853
+[ 58] 0x00007fbad7b990f7 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcr.so+00696567
+[ 59] 0x00007fbae764167b /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmvm.so+03217019 _ZN14cmddistributor15PackagedTaskIIP10invokeFuncIN7mwboost8functionIFvvEEEEENS2_10shared_ptrINS2_13unique_futureIDTclfp_EEEEEERKT_+00000059
+[ 60] 0x00007fbae7641768 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmvm.so+03217256 _ZNSt17_Function_handlerIFN7mwboost3anyEvEZN14cmddistributor15PackagedTaskIIP10createFuncINS0_8functionIFvvEEEEESt8functionIS2_ET_EUlvE_E9_M_invokeERKSt9_Any_data+00000024
+[ 61] 0x00007fbad7d4735c /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwiqm.so+00795484 _ZN7mwboost6detail8function21function_obj_invoker0ISt8functionIFNS_3anyEvEES4_E6invokeERNS1_15function_bufferE+00000028
+[ 62] 0x00007fbad7d47017 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwiqm.so+00794647 _ZN3iqm18PackagedTaskPlugin7executeEP15inWorkSpace_tag+00000439
+[ 63] 0x00007fbad7bd7a05 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcr.so+00952837
+[ 64] 0x00007fbad7d28690 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwiqm.so+00669328
+[ 65] 0x00007fbad7d0e1e8 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwiqm.so+00561640
+[ 66] 0x00007fbad74d078b /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwbridge.so+00321419
+[ 67] 0x00007fbad74d12d4 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwbridge.so+00324308
+[ 68] 0x00007fbad74d9136 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwbridge.so+00356662
+[ 69] 0x00007fbad74d9489 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwbridge.so+00357513
+[ 70] 0x00007fbad74d9a08 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwbridge.so+00358920 _Z8mnParserv+00000344
+[ 71] 0x00007fbad7bd9ee3 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcr.so+00962275
+[ 72] 0x00007fbae764167b /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmvm.so+03217019 _ZN14cmddistributor15PackagedTaskIIP10invokeFuncIN7mwboost8functionIFvvEEEEENS2_10shared_ptrINS2_13unique_futureIDTclfp_EEEEEERKT_+00000059
+[ 73] 0x00007fbae7641768 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmvm.so+03217256 _ZNSt17_Function_handlerIFN7mwboost3anyEvEZN14cmddistributor15PackagedTaskIIP10createFuncINS0_8functionIFvvEEEEESt8functionIS2_ET_EUlvE_E9_M_invokeERKSt9_Any_data+00000024
+[ 74] 0x00007fbad7d4735c /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwiqm.so+00795484 _ZN7mwboost6detail8function21function_obj_invoker0ISt8functionIFNS_3anyEvEES4_E6invokeERNS1_15function_bufferE+00000028
+[ 75] 0x00007fbad7d47017 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwiqm.so+00794647 _ZN3iqm18PackagedTaskPlugin7executeEP15inWorkSpace_tag+00000439
+[ 76] 0x00007fbad7bd7a05 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcr.so+00952837
+[ 77] 0x00007fbad7d28690 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwiqm.so+00669328
+[ 78] 0x00007fbad7d0c199 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwiqm.so+00553369
+[ 79] 0x00007fbad7d0cddb /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwiqm.so+00556507
+[ 80] 0x00007fbad7bbc018 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcr.so+00839704
+[ 81] 0x00007fbad7bbc632 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcr.so+00841266
+[ 82] 0x00007fbad7bbcea4 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmcr.so+00843428
+[ 83] 0x00007fbae5d18a02 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwboost_thread.so.1.70.0+00064002
+[ 84] 0x00007fbae6cb02de                             /lib64/libpthread.so.0+00033502
+[ 85] 0x00007fbae6449e83                                   /lib64/libc.so.6+01031811 clone+00000067
+
+** This crash report has been saved to disk as /home/lhw150030/matlab_crash_dump.43022-1 **
+
+
+
+MATLAB is exiting because of fatal error
+/var/spool/slurm/d/job04062/slurm_script: line 16: 43022 Killed                  matlab -nodesktop -nodisplay -nosplash -r "liveRun2021DailyPlotter("$SLURM_ARRAY_TASK_ID",'mintsDefinitions.yaml','WSPre','predictrnn')"

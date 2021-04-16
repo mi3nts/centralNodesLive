@@ -1,0 +1,75 @@
+free(): invalid pointer
+
+--------------------------------------------------------------------------------
+               abort() detected at Sun Mar 14 18:25:40 2021 -0500
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : UTF-8
+  Deployed                 : false
+  GNU C Library            : 2.28 stable
+  Graphics Driver          : Unknown software 
+  Graphics card 1          : 0x1a03 ( 0x1a03 ) 0x2000 Version 0.0.0.0 (0-0-0)
+  Java Version             : Java 1.8.0_202-b08 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+  MATLAB Architecture      : glnxa64
+  MATLAB Entitlement ID    : 1331448
+  MATLAB Root              : /opt/ohpc/pub/unpackaged/apps/matlab/R2020a
+  MATLAB Version           : 9.8.0.1359463 (R2020a) Update 1
+  OpenGL                   : software
+  Operating System         : Linux 4.18.0-193.19.1.el8_2.x86_64 #1 SMP Mon Sep 14 14:37:00 UTC 2020 x86_64
+  Process ID               : 38470
+  Processor ID             : x86 Family 6 Model 45 Stepping 7, GenuineIntel
+  Session Key              : c5494d6c-cbc6-4a7c-a1f3-35b81d17bd9e
+  Static TLS mitigation    : Disabled: Unnecessary
+  Window System            : No active display
+
+Fault Count: 1
+
+
+Abnormal termination:
+abort()
+
+Register State (from fault):
+  RAX = 0000000000000000  RBX = 0000000000000006
+  RCX = 00007fdf70fb970f  RDX = 0000000000000000
+  RSP = 00007fdf2041d030  RBP = 00007fdf2041d380
+  RSI = 00007fdf2041d030  RDI = 0000000000000002
+
+   R8 = 0000000000000000   R9 = 00007fdf2041d030
+  R10 = 0000000000000008  R11 = 0000000000000246
+  R12 = 0000000000001000  R13 = 00007fdf2041d2a0
+  R14 = 0000000000000010  R15 = 00007fded4000000
+
+  RIP = 00007fdf70fb970f  EFL = 0000000000000246
+
+   CS = 0033   FS = 0000   GS = 0000
+
+Stack Trace (from fault):
+[  0] 0x00007fdf70fb970f                                   /lib64/libc.so.6+00227087 gsignal+00000271
+[  1] 0x00007fdf70fa3b25                                   /lib64/libc.so.6+00138021 abort+00000295
+[  2] 0x00007fdf70ffc897                                   /lib64/libc.so.6+00501911
+[  3] 0x00007fdf71002fdc                                   /lib64/libc.so.6+00528348
+[  4] 0x00007fdf710048dc                                   /lib64/libc.so.6+00534748
+[  5] 0x00007fdf5aa20d79 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/matlab_startup_plugins/jmi/../../../../bin/glnxa64/libmwjmi.so+01650041
+[  6] 0x00007fdf5aa20956 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/matlab_startup_plugins/jmi/../../../../bin/glnxa64/libmwjmi.so+01648982
+[  7] 0x00007fdf6f52ab65 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmlutil.so+07727973 _ZN14cmddistributor16RuntimeExceptionD1Ev+00000309
+[  8] 0x00007fdf6f52afd1 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmlutil.so+07729105 _ZN14cmddistributor16RuntimeExceptionD0Ev+00000017
+[  9] 0x0000000000409292 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/MATLAB+00037522 _ZN7mwboost6detail15sp_counted_base7releaseEv+00000034
+[ 10] 0x00007fdf721ad1d4 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libmwmvm.so+02396628 _ZN7mwboost6detail17shared_state_baseD1Ev+00000324
+[ 11] 0x00007fdf116b0a0c /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libnativemvm.so+00743948 _ZN7mwboost6detail12shared_stateINS_10shared_ptrIN9nativemvm9MvmResultEEEED0Ev+00000060
+[ 12] 0x0000000000409292 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/MATLAB+00037522 _ZN7mwboost6detail15sp_counted_base7releaseEv+00000034
+[ 13] 0x00007fdf116b035a /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libnativemvm.so+00742234 _ZN7mwboost6detail18sp_counted_impl_pdIPN9nativemvm15MvmFutureResultENS0_13sp_ms_deleterIS3_EEE7disposeEv+00000042
+[ 14] 0x0000000000409292 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/MATLAB+00037522 _ZN7mwboost6detail15sp_counted_base7releaseEv+00000034
+[ 15] 0x00007fdf116becb4 /opt/ohpc/pub/unpackaged/apps/matlab/R2020a/bin/glnxa64/libnativemvm.so+00801972
+[ 16] 0x00007fdee50186c7                                   <unknown-module>+00000000
+[ 17] 0x00007fdee50082bd                                   <unknown-module>+00000000
+[ 18] 0x00007fdee58e89f8                                   <unknown-module>+00000000
+
+** This crash report has been saved to disk as /home/lhw150030/matlab_crash_dump.38470-1 **
+
+
+
+MATLAB is exiting because of fatal error
+/var/spool/slurm/d/job04061/slurm_script: line 16: 38470 Killed                  matlab -nodesktop -nodisplay -nosplash -r "liveRun2021DailyPlotter("$SLURM_ARRAY_TASK_ID",'mintsDefinitions.yaml','WSPre','predictrnn')"

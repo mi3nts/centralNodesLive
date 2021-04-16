@@ -1,0 +1,5 @@
+{Unrecognized function or variable 'ReadYaml'.
+
+Error in liveRun2021DailyPlotter (line 8)
+mintsDefinitions   = ReadYaml(yamlFile);
+} 
